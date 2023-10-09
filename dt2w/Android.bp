@@ -15,7 +15,7 @@
  */
 
 android_app {
-    name: "DT2W-Service-Diting",
+    name: "DT2W-Service-Unicorn",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -29,15 +29,15 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.Diting",
+        "privapp-permissions_org.lineageos.dt2w.Unicorn",
         "xiaomi-touch"
     ]
 }
 
 prebuilt_etc {
-    name: "privapp-permissions_org.lineageos.dt2w.Diting",
+    name: "privapp-permissions_org.lineageos.dt2w.Unicorn",
     sub_dir: "permissions",
-    src: "privapp-permissions_org.lineageos.dt2w.Diting.xml",
+    src: "privapp-permissions_org.lineageos.dt2w.Unicorn.xml",
     filename_from_src: true,
 }
 

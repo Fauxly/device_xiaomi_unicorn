@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE), diting)
+ifeq ($(TARGET_DEVICE), unicorn)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)

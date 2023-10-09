@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/diting/diting-vendor.mk)
+$(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Project ID Quota.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-DEVICE_PATH := device/xiaomi/diting
+DEVICE_PATH := device/xiaomi/unicorn
 
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-Diting
+    DT2W-Service-Unicorn
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -105,7 +105,9 @@ PRODUCT_PACKAGES += \
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
-    $(DEVICE_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    $(DEVICE_PATH)/configs/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.Performance.xml \
+    $(DEVICE_PATH)/configs/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.UxPerformance.xml
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -149,10 +151,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     AospWifiResOverlayDitingChina \
-    AospWifiResOverlayDitingGlobal \
-    AospWifiResOverlayDitingJapan \
     SettingsProviderOverlayChina \
-    SettingsProviderOverlayGlobal
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -168,6 +167,11 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libtflite \
     vendor.qti.hardware.perf@2.3
+
+# Boot Jars
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
 
 # Power
 PRODUCT_PACKAGES += \

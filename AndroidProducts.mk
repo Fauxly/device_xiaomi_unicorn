@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_diting.mk 
+    $(LOCAL_DIR)/aosp_unicorn.mk 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_diting-eng \
-    aosp_diting-userdebug \
-    aosp_diting-user 
+    aosp_unicorn-eng \
+    aosp_unicorn-userdebug \
+    aosp_unicorn-user 

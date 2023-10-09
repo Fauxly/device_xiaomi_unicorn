@@ -1,4 +1,4 @@
-# All blobs are taken from diting missi_phone_global-user-13-TKQ1.220829.002-V14.0.2.0.TLFMIXM-release-keys
+# All blobs are taken from unicorn unicorn_images_V14.0.9.0.TLECNXM_20230609.0000.00_13.0_cn_ca3283e892.tgz
 
 # Audio
 system_ext/bin/qxrsplitauxservice
@@ -22,7 +22,7 @@ system_ext/lib64/libhoaeffects_csim.so
 system_ext/lib64/liblistenjni.qti.so
 system_ext/lib64/liblistensoundmodel2.qti.so
 system_ext/lib64/liblsmclient.so
-system_ext/lib64/libqxrsplitauxservice.qti.so
+# system_ext/lib64/libqxrsplitauxservice.qti.so
 system_ext/lib64/libvr_amb_engine.so
 system_ext/lib64/libvr_object_engine.so
 system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
@@ -46,8 +46,8 @@ system/lib64/libdovi_omx.so
 system/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Dolby Audio  - from 9R OOS 11.2.8.8
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
+# -system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
+# -system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
 
 # DPM
 system_ext/bin/dpmd
@@ -70,10 +70,10 @@ system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+# -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+# system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+# system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 
 # Media
@@ -146,11 +146,19 @@ system_ext/lib64/vendor.qti.hardware.perf@2.1.so
 system_ext/lib64/vendor.qti.hardware.perf@2.2.so
 system_ext/lib64/vendor.qti.hardware.perf@2.3.so
 system_ext/lib64/vendor.qti.qspmhal@1.0.so
-system/etc/permissions/com.qualcomm.qti.Performance.xml|7976f2fd46b8d07814310cc957a70f829bdd6932
-system/etc/permissions/com.qualcomm.qti.UxPerformance.xml|d92749d80c5d956db8251b08ea6388d3f107a32c
--system/framework/QXPerformance.jar
--system/framework/QPerformance.jar
--system/framework/UxPerformance.jar
+# system/etc/permissions/com.qualcomm.qti.Performance.xml|7976f2fd46b8d07814310cc957a70f829bdd6932
+# system/etc/permissions/com.qualcomm.qti.UxPerformance.xml|d92749d80c5d956db8251b08ea6388d3f107a32c
+system/framework/QXPerformance.jar
+system/framework/QPerformance.jar
+system/framework/UxPerformance.jar
+system/lib/libtflite.so
+system/lib64/libtflite.so
+
+# MiPerf
+system_ext/lib/libmiperf_jni.so
+system_ext/lib/vendor.xiaomi.hardware.miperf@1.0.so
+system_ext/lib64/libmiperf_jni.so
+system_ext/lib64/vendor.xiaomi.hardware.miperf@1.0.so
 
 # Postprocessing
 product/etc/permissions/com.qti.snapdragon.sdk.display.xml

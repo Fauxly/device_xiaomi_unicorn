@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.Diting;
+package org.lineageos.dt2w.Unicorn;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.os.UserHandle;
 
 public class OnBootCompleteReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
-        Intent sIntent = new Intent(context, DT2WServiceDiting.class);
+        Intent sIntent = new Intent(context, DT2WServiceUnicorn.class);
         context.startServiceAsUser(sIntent, UserHandle.CURRENT);
     }
 }

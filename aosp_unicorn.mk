@@ -18,17 +18,19 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_USES_AOSP_RECOVERY := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from diting device.
-$(call inherit-product, device/xiaomi/diting/device.mk)
+# Inherit from unicorn device.
+$(call inherit-product, device/xiaomi/unicorn/device.mk)
 
 ## Device identifier
-PRODUCT_DEVICE := diting
-PRODUCT_NAME := aosp_diting
+PRODUCT_DEVICE := unicorn
+PRODUCT_NAME := aosp_unicorn
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi K50 Ultra
+PRODUCT_MODEL := Xiaomi 12S Pro
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="diting"
+    PRODUCT_NAME="unicorn"
+
+BUILD_FINGERPRINT := Xiaomi/unicorn/unicorn:13/SKQ1.220303.001/V14.0.2.0.TLFMIXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

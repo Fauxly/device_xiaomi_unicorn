@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.Diting;
+package org.lineageos.dt2w.Unicorn;
 
 import android.app.Service;
 import android.content.ContentResolver;
@@ -13,8 +13,8 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings.Secure;
 
-public class DT2WServiceDiting extends Service {
-    private static final String TAG = "DT2WServiceDiting";
+public class DT2WServiceUnicorn extends Service {
+    private static final String TAG = "DT2WServiceUnicorn";
     private Context mContext;
     private Handler mHandler;
     private CustomSettingsObserver mCustomSettingsObserver;
@@ -53,7 +53,7 @@ public class DT2WServiceDiting extends Service {
         void update() {
             int dt2wValue = Secure.getInt(mContext.getContentResolver(), Secure.DOUBLE_TAP_TO_WAKE, 0);
             boolean dt2wEnabled = dt2wValue == 1;
-            SystemProperties.set("persist.sys.diting.dt2w", dt2wEnabled ? "1" : "0");
+            SystemProperties.set("persist.sys.unicorn.dt2w", dt2wEnabled ? "1" : "0");
         }
 
         @Override
