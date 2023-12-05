@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_unicorn.mk 
+    $(LOCAL_DIR)/lineage_unicorn.mk 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_unicorn-eng \
-    aosp_unicorn-userdebug \
-    aosp_unicorn-user 
+    lineage_unicorn-eng \
+    lineage_unicorn-userdebug \
+    lineage_unicorn-user 
